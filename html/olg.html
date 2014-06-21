@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <h1>Our Lady Of Guadalupe</h1>
-    </head>
-<body>
+<head>
+	<style type="text/css" media="all">
+        /* all content divs should be hidden initially */
+        .content {
+			display : none;
+        }
+	</style
+</head>
+	<!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+    // Wait for the document to load
+		$(document).ready(function() {
+        // When one of our nav links is clicked on,
+		$('#nav a').click(function(e) {
+			div_to_activate = $(this).attr('href'); // Store its target
+			$('.content:visible').hide(); // Hide any visible div with the class "content"
+			$(div_to_activate).show(); // Show the target div
+        })	
+    });
+    </script>
 
-    <h3>Home</h3>
-    <p>
-        Welcome
-        The Faith Formation program at Our Lady of Guadalupe is a vital part of our thriving parish.
-        In 2014 Our Lady of Guadalupe had a record number of 150 youth confirmed at the Cathedral in
-        St. Paul. With numbers like this Our Lady of Guadalupe has an army of strong dedicated volunteers
-        that help our youth grow and flourish in the Catholic faith.
-    </p>
+ <body>
+ <div id="container" style="width:1440px;">
 
-    <h3>Our Lady Of Guadalupe Photo Gallery
-        <ul>
-        </ul>
+<div id="header" style="background-color:#809aa7;height:200px;">
+<h1 style="margin-bottom:0; text-align:center">Our Lady Of Guadalupe</h1>
+</div>
 
-        <h3>Office Hours</h3>
-        <p>Monday - Friday 9:00 am - 4:00 pm</p>
-        <p>Saturday & Sunday 10:00 am - 2:00 pm </p>
-        <p>Parish Building is open daily from 8:00 am - 8:00 pm</p>
+<div id="menu" style="background-color:#dddddd;height:150px;width:200px;float:left;">
+<span id="nav">
+<a href="#home">Home</a> | <br>
+<a href="#faithformation">Faith Formation</a> | <br>
+<a href="#volunteers">Volunteer</a> | <br>
+<a href="#events">Events</a> | <br>
+<a href="#clubs">Clubs</a> | <br>
+<a href="#photogallery">Photo Gallery</a> |
+</span>
+</div>
 
-        <h3>Mass Times</h3>
-        <p>Sunday - 9:00 am (English)</p>
-        <p>Sunday - 11:00 am (Spanish)</p>
-        <p>Sunday - 1:00 pm (Spanish)</p>
-        <p>Tuesday - 6:30 pm</p>
-        <p>Wednesday - 10:00 am</p>
-        <p>Thursday - 12:30 pm</p>
-        <p>First Friday - 6:30 pm</p>
-    <h3>Faith Formation Director</h3>
-    <p>
-        Juana Mandujano (651-228-0506 ext. #12) (we will need to create an email for her)
-    </p>
+<div id="content" style="background-color:#EEEEEE;height:150px;width:900px;float:left;">
+<!--all Home info goes here -->
+<div class="content" id="home">
+<p>home</p>
+</div>
 
-    <h3>Program Available</h3>
-    <p>
-        <ul>
-            Baptism: Held first Sunday (English) and second Sunday (Spanish) of each month
+<div class="content" id="faithformation">
+<!--all Faith Formation info goes here -->
+<p>faithformation</p>
+</div>
 
-        </ul>
-        <ul>
-            First Reconciliation & Eucharist: One Year Program. Runs
-            Wednesdays beginning September - April of each year
-        </ul>
+<div class="content" id="volunteers">
+<!--all Volunteer info goes here -->
+<p>volunteers</p>
+</div>
 
-    <ul>
-        Confirmation: Two Year Program. Runs Thursdays beginning September - April of each year
+<div  class="content" id="events">
+<!--all Event info goes here -->
+<p>events</p>
+</div>
 
-    </ul>
+<div  class="content" id="clubs">
+<!--all Club info goes here -->
+<p>clubs</p>
+</div>
 
-    <ul>
-        Vacation Bible School: Summer Program. Runs for one week during August each year.
-    </ul>
+<div  class="content" id="photogallery">
+<!--all Gallery info goes here -->
+<p>gallery</p>
+</div>
 
-    </p>
+</div>
 
-    <h3>volunteer Page Content</h3>
-    <p>
-        <ul>
-            volunteer Picture
-        </ul>
+<div id="imageConent" style="height:150px;width:100px;float:left;">
+Image goes here
+</div>
+<div id="footer" style="background-color:#809aa7;clear:both;text-align:center;height:100px;">
+401 Concord Street, St. Paul, MN 55107 | Phone: (651) 228-0506 | Fax (651) 224-5162 </div >
 
-        <ul>
-
-        </ul>
-
-        <ul>
-        </ul>
-
-</body>
+</div>
+ </body>
 </html>
