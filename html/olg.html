@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-	<style type="text/css" media="all">
-        /* all content divs should be hidden initially */
-        .content {
-			display : none;
-        }
-	</style
+<!--add your .css file path here at "href" -->
+	<link rel="stylesheet" type="text/css" href="/Users/Bayardo/Desktop/OLG/olg.css">
 </head>
-	<!--jquery-->
+
+<!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>
     // Wait for the document to load
@@ -21,64 +18,76 @@
         })	
     });
     </script>
-
- <body>
- <div id="container" style="width:1440px;">
-
-<div id="header" style="background-color:#809aa7;height:200px;">
-<h1 style="margin-bottom:0; text-align:center">Our Lady Of Guadalupe</h1>
+	
+<div class="header"> 
+	<div class="headerContent">
+	Our Lady Of Guadalupe 
+	</div >
 </div>
 
-<div id="menu" style="background-color:#dddddd;height:150px;width:200px;float:left;">
+
+<div class="mainBody"> 
+
+<div class="menu"> Menu <br>
 <span id="nav">
 <a href="#home">Home</a> | <br>
 <a href="#faithformation">Faith Formation</a> | <br>
 <a href="#volunteers">Volunteer</a> | <br>
 <a href="#events">Events</a> | <br>
 <a href="#clubs">Clubs</a> | <br>
-<a href="#photogallery">Photo Gallery</a> |
 </span>
-</div>
+</div> <!--end of menu div-->
 
-<div id="content" style="background-color:#EEEEEE;height:150px;width:900px;float:left;">
-<!--all Home info goes here -->
+<div class="dynamicContent">
+
 <div class="content" id="home">
-<p>home</p>
+<!--all home info goes here -->
+home
 </div>
 
 <div class="content" id="faithformation">
 <!--all Faith Formation info goes here -->
-<p>faithformation</p>
+faithformation
 </div>
 
 <div class="content" id="volunteers">
 <!--all Volunteer info goes here -->
-<p>volunteers</p>
+volunteers
 </div>
 
 <div  class="content" id="events">
 <!--all Event info goes here -->
-<p>events</p>
+events
 </div>
 
 <div  class="content" id="clubs">
 <!--all Club info goes here -->
-<p>clubs</p>
+clubs
 </div>
 
-<div  class="content" id="photogallery">
-<!--all Gallery info goes here -->
-<p>gallery</p>
+</div> <!-- end of dynamicContent -->
+
+<div class="imageContent">
+
+<div class="topButtonArea">
+<button type="button">Previous</button>
 </div>
 
+<div class="imageArea">
+<!--add your file path for the image here at "src" -->
+	<img border="0" src="/Users/Bayardo/Desktop/OLG//images/conformation.jpg" alt="Church" width=500px height=auto align="middle">
 </div>
 
-<div id="imageConent" style="height:150px;width:100px;float:left;">
-Image goes here
+<div class="bottomButtonArea">
+<button type="button">Next</button>
 </div>
-<div id="footer" style="background-color:#809aa7;clear:both;text-align:center;height:100px;">
-401 Concord Street, St. Paul, MN 55107 | Phone: (651) 228-0506 | Fax (651) 224-5162 </div >
+</div> <!-- end of imageContent -->
 
+</div> <!-- end of mainBody -->
+
+<div class="footer">
+	<div class="footerContent">
+		401 Concord Street, St. Paul, MN 55107 | Phone: (651) 228-0506 | Fax (651) 224-5162
+	</div>
 </div>
- </body>
-</html>
+
