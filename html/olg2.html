@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script><script type="text/javascript" src="infiniterotator.js"></script>
+	<link type="text/css" rel="stylesheet" href="churchwebs.css"/>
+	<style type="text/css" media="all">
+        /* all content divs should be hidden initially */
+        .content {
+			display : none;
+        }
+	</style>
+	
+</head>
+	<!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+    // Wait for the document to load
+		$(document).ready(function() {
+        // When one of our nav links is clicked on,
+		$('#nav a').click(function(e) {
+			div_to_activate = $(this).attr('href'); // Store its target
+			$('.content:visible').hide(); // Hide any visible div with the class "content"
+			$(div_to_activate).show(); // Show the target div
+        })	
+    });
+    </script>
+
+ <body>
+<!-- Begin TranslateThis Button -->
+
+<div id="translate-this"><a style="width:180px;height:18px;display:block;" class="translate-this-button" href="http://www.translatecompany.com/translate-this/">Translate This</a></div>
+
+<script type="text/javascript" src="http://x.translateth.is/translate-this.js"></script>
+<script type="text/javascript">
+TranslateThis();
+</script>
+
+<!-- End TranslateThis Button -->
+<div id="rotating-item-wrapper">
+      <img src="C:\Users\Pat\Pictures\Eurotrip" alt="a person entering a building" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/entrance.jpg" alt="photo of building across from our office" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/bluepeople.jpg" alt="building entrance with neon backlit walls" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/reflection3.jpg" alt="building lobby window reflections" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/reflection2.jpg" alt="reflection on building windows" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/manequine.jpg" alt="two manequines in window" class="rotating-item" width="980" height="347" />
+      <p style="display:none;">Source code and instructions at: <a href="http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/">Infinite Loop: Rotating Images Using jQuery (JavaScript)</a><br/>by <a href="http://trendmedia.com/">San Francisco WordPress website designers and developers - TrendMedia</a></p>
+    </div>
+        
+ <div id="container" style="width:1440px;">
+
+<div id="header" style="background-color:#809aa7;height:200px;">
+<h1 style="margin-bottom:0; text-align:center">Our Lady Of Guadalupe</h1>
+</div>
+
+<div id="menu" style="background-color:#dddddd;height:150px;width:200px;float:left;">
+<span id="nav">
+<a href="#home">Home</a> | <br>
+<a href="#faithformation">Faith Formation</a> | <br>
+<a href="#volunteers">Volunteer</a> | <br>
+<a href="#events">Events</a> | <br>
+<a href="#clubs">Clubs</a> | <br>
+<a href="#photogallery">Photo Gallery</a> |
+</span>
+</div>
+
+<div id="content" style="background-color:#EEEEEE;height:150px;width:900px;float:left;">
+<!--all Home info goes here -->
+<div class="content" id="home">
+<p>home</p>
+</div>
+
+<div class="content" id="faithformation">
+<!--all Faith Formation info goes here -->
+<p>faithformation</p>
+</div>
+
+<div class="content" id="volunteers">
+<!--all Volunteer info goes here -->
+<p>volunteers</p>
+</div>
+
+<div  class="content" id="events">
+<!--all Event info goes here -->
+<p>events</p>
+</div>
+
+<div  class="content" id="clubs">
+<!--all Club info goes here -->
+<p>clubs</p>
+</div>
+
+<div  class="content" id="photogallery">
+<!--all Gallery info goes here -->
+<p>gallery</p>
+</div>
+
+</div>
+
+<div id="imageConent" style="height:150px;width:100px;float:left;">
+	  <img src="C:\Users\Pat\Pictures\Eurotrip" alt="a person entering a building" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/entrance.jpg" alt="photo of building across from our office" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/bluepeople.jpg" alt="building entrance with neon backlit walls" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/reflection3.jpg" alt="building lobby window reflections" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/reflection2.jpg" alt="reflection on building windows" class="rotating-item" width="980" height="347" />
+      <img src="https://raw.githubusercontent.com/mcnitt/jquery-infinite-rotator/master/images/manequine.jpg" alt="two manequines in window" class="rotating-item" width="980" height="347" />
+      <p style="display:none;">Source code and instructions at: <a href="http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/">Infinite Loop: Rotating Images Using jQuery (JavaScript)</a><br/>by <a href="http://trendmedia.com/">San Francisco WordPress website designers and developers - TrendMedia</a></p>
+    </div>
+Image goes here
+</div>
+<div id="footer" style="background-color:#809aa7;clear:both;text-align:center;height:100px;">
+401 Concord Street, St. Paul, MN 55107 | Phone: (651) 228-0506 | Fax (651) 224-5162 </div >
+
+</div>
+ </body>
+</html>
