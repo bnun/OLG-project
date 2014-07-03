@@ -3,9 +3,18 @@
 body {
     margin:0;
 }
+
+
+ul.nav a {      
+text-decoration: none;      
+color: #333;      
+background-color: yellow;      
+display: block;      
+width: 8em; 
 .content {
 	display: none;
 }
+
 .header {
     height: 100px;
     background-color: #809aa7;
@@ -70,3 +79,4 @@ body {
 	text-align: center;
     width:100%;
 }
+
