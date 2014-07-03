@@ -44,7 +44,17 @@ width: 8em;
 	float: left;
 	width: 750px;
 }
-
+#rotating-item-wrapper {
+	position: relative;
+	width: 640px;
+	height: 347px;
+}
+.rotating-item {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 .imageContent {
 	background-color: white;
 	height: auto;
