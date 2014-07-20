@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Pcakes\Documents\GitHub\OLG-project\main.css">
+</head>
+
+<!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+    // Wait for the document to load
+		$(document).ready(function() {
+        // When one of our nav links is clicked on,
+		$('#nav a').click(function(e) {
+			div_to_activate = $(this).attr('href'); // Store its target
+			$('.content:visible').hide(); // Hide any visible div with the class "content"
+			$(div_to_activate).show(); // Show the target div
+        })	
+    });
+    </script>
+	
+<div class="header"> 
+	<div class="headerContent">
+	Our Lady Of Guadalupe 
+	</div >
+</div>
+
+
+<div class="mainBody"> 
+
+<div class="menu"> Menu <br>
+<span id="nav">
+<a href="#home">Home</a> | <br>
+<a href="#faithformation">Faith Formation</a> | <br>
+<a href="#volunteers">Volunteer</a> | <br>
+<a href="#events">Events</a> | <br>
+<a href="#clubs">Clubs</a> | <br>
+</span>
+</div> <!--end of menu div-->
+
+<div class="dynamicContent">
+
+<div class="content" id="home">
+<!--all home info goes here -->
+<h3>Welcome</h3>
+<p>Welcome to the homepage of Our Lady of Guadalupe Parish. Thank you for taking the time to connect with us. 
+Our parish was founded in 1931 by a small group of Mexican Immigrants and continues to 
+thrive today with life and enthusiasm. We are proud to have shared this parish with Fr. Kevin Kenny for the 
+past 10 years. On behalf of Our Lady of Guadalupe parish we invite you to look over our website and sign up 
+for volunteer opportunities, special event e-blasts, or mass alerts. If you're ever in the neighborhood, stop 
+by for a visit and say hello. <br><br>
+Office Hours<br><br>
+Monday - Friday 9:00 am - 4:00 pm <br>
+Saturday & Sunday 10:00 am - 2:00 pm <br>
+Parish Building is open daily from 8:00 am - 8:00 pm <br><br>
+Mass Times  <br><br>
+Sunday - 9:00 am (English) <br>
+Sunday - 11:00 am (Spanish) <br>
+Sunday - 1:00 pm (Spanish) <br>
+Tuesday - 6:30 pm <br>
+Wednesday - 10:00 am <br>
+Thursday - 12:30 pm <br>
+First Friday - 6:30 pm <br>
+</p>
+</div>
+
+<div class="content" id="faithformation">
+<!--all Faith Formation info goes here -->
+<h3>Faith Formation</h3>
+<p>
+The Faith Formation program at Our Lady of Guadalupe is a vital part of our thriving parish.  In  2014 Our Lady
+of Guadalupe had a record number of 150 youth confirmed at the Cathedral in St.  Paul. With numbers like this
+Our Lady of Guadalupe has an army of strong dedicated volunteers  that help our youth grow and flourish in the
+Catholic faith.<br><br>
+Faith Formation Director  Juana Mandujano (651­228­0506 ext. #12) (we will need to create an email for her) <br>
+
+Programs Available:<br><br>
+• Baptism: Held first Sunday (English) and second Sunday (Spanish) of each month   <br>
+• First Reconciliation & Eucharist: One Year Program. Runs Wednesdays beginning  September ­ April of each year
+(We should have a banner on this page that says “Registration for Fall Faith Formation begins  6/30/14 after each mass and during office hours)  <br>
+• Confirmation:  Two Year Program. Runs Thursdays beginning September ­ April of each  year   <br>
+• Vacation Bible School:  Summer Program. Runs for one week during August each year.<br>
+</p>
+</div>
+
+<div class="content" id="volunteers">
+<!--all Volunteer info goes here -->
+<h3>Volunteers</h3>
+<p>
+Welcome to Our Lady of Guadalupe's Volunteer page.  Below is a list of ongoing volunteer  opportunities.  
+Feel free to signup for occasional Volunteer email blasts. <br>
+Contact Person <br>
+Volunteer Coordinator:  Marie Zellner (We need to create and email for her)   <br>
+List of Ongoing Volunteer Opportunities:  God's Housekeepers,   Church Ground Maintenance,  Office Work,
+Church repair work,  Faith Formation,  Vacation Bible School,  Music/Choir,  Eucharist Ministry,  Readers/Lectors,
+Altar servers,  Greeters,  Ushers,  Men's Club,  Guadalupanas (womens group),  Treasure Sales,  Youth Group,
+Summer Festival,  Enchilda Lenten Dinner,  Parish Picnic.  
+	
+</p>
+</div>
+
+<div  class="content" id="events">
+<!--all Event info goes here -->
+<h3>Events</h3>
+<p>
+	
+</p>
+</div>
+
+<div  class="content" id="clubs">
+<!--all Club info goes here -->
+<h3>Clubs</h3>
+</div>
+
+</div> <!-- end of dynamicContent -->
+
+<div class="imageContent">
+
+<div class="topButtonArea">
+<button type="button">Previous</button>
+</div>
+
+<div class="imageArea">
+	<img border="0" src="C:\Users\Pcakes\Documents\GitHub\OLG-project\images\conformation.jpg" alt="Church" width=500px height=auto align="middle">
+</div>
+
+<div class="bottomButtonArea">
+<button type="button">Next</button>
+</div>
+</div> <!-- end of imageContent -->
+
+</div> <!-- end of mainBody -->
+
+<div class="footer">
+	<div class="footerContent">
+		401 Concord Street, St. Paul, MN 55107 | Phone: (651) 228-0506 | Fax (651) 224-5162
+	</div>
+</div>
+
